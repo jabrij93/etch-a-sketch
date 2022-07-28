@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700&display=swap');
+
+body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    background-color: beige;
+    font-family: Asap, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    
+}
+
+#header-title {
+    font-family: Asap, sans-serif;
+    font-size: 18px;
+}
+ 
+#setGridSize {
+    display: inline-flex;
+    justify-content: center;
+    flex: 1;
+    gap: 12px;
+}
+
+#guide {
+    text-align: center;
+    margin: 1px;
+    font-family:  Asap, sans-serif;
+    color: red;
+    font-size: 13px;;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 550px;
+    height: 550px;
+}
+
+.gridColumn {
+    display: inline-flex;
+    border: 1px solid beige;
+    margin: -1px 0;
+    width: 30px;
+    height: 30px;
+}
+
+.default {
+    background: beige;
+  }
+
+#button-container {
+    margin: 3px;
+}
+
+ #clear-button {
+    margin: 2px;
+ } 

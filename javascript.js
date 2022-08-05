@@ -1,18 +1,33 @@
 let container = document.querySelector('.container');
 let rows = document.getElementsByClassName('gridRow');
+let duplicateOfInput = document.getElementById('duplicateOfInput');
+let button = document.getElementById('submit');
+let inputFromBox = document.getElementById('size-box');
+
+button.addEventListener('click', createGrid);
+
+createGrid(16);
+draw();
+
+// createGrid(anyNumber);
+// draw();
+
+// duplicateOfInput.textContent = `${input}`;
 
 // const rainbow = document.getElementsByClassName('rainbow');
 let reset = document.getElementById('clear-button');
 reset.addEventListener('click', clearGrid);
 
 
-function createGrid(number) {
+function createGrid() {
+    let number = inputFromBox.value ;
     makeRow(number);
     makeColumn(number);
     draw();
 }
 
 function makeRow(numberOfRow) {
+    container.innerHTML = "";
     for (let i = 0; i <numberOfRow; i++) {
         let row = document.createElement('div');
         container.appendChild(row);
@@ -65,6 +80,3 @@ function clearGrid() {
         columns[i].style.backgroundColor = '';
     }
 }
-
-createGrid(16);
-draw();

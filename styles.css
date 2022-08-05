@@ -30,6 +30,7 @@ body {
 #setGridSize {
     display: inline-flex;
     justify-content: center;
+    align-items: center;
     flex: 1;
     gap: 12px;
 }
@@ -42,23 +43,38 @@ body {
     font-size: 13px;;
 }
 
-.container {
+.canvas {
     display: flex;
     justify-content: center;
-    align-content: center;
-    align-items: center;
-    border: 1px solid black;
+    align-items:  center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
     width: 550px;
     height: 550px;
 }
 
-.gridColumn {
+/* .gridColumn {
     display: inline-flex;
     border: 1px solid beige;
     margin: -1px 0;
     width: 30px;
     height: 30px;
+} */
+
+.gridColumn {
+    flex: 1;
+    border: 1px solid beige;
 }
+
+.gridRow {
+    display: flex;
+    flex: 1;
+}
+
 
 .default {
     background: beige;

@@ -63,7 +63,7 @@ function draw() {
         if (blue.checked) {
             this.style.backgroundColor = '#36367e';
         } else if (eraser.checked) {
-            this.style.backgroundColor = '#84a8bb';
+            this.style.backgroundColor = '#6B5B95';
         } else if (gray.checked) {
             this.style.backgroundColor = '#a0a0a3';
         } else if (rainbow.checked) {

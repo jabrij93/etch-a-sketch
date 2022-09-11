@@ -1,30 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 body {
     display: flex;
     height: 100%;
     width: 100%;
     flex-direction: column;
-    background-color: beige;
+    background: #6B5B95;
     font-family: Asap, sans-serif;
     margin: 0;
     padding: 0;
     justify-content: center;
     align-content: center;
     align-items: center;
-    background-repeat: no-repeat;
 }
 
 .header {
     display: flex;
     flex: 1;
     justify-content: center;
-    
+    color: #203657;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.header span {
+    font-size: 72px;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0 0 0 8px;
+    position: relative;
+    bottom: 18px;
+
 }
 
 #header-title {
     font-family: Asap, sans-serif;
-    font-size: 18px;
+    font-size: 24px;
+    color: #203657;
+    font-weight: 600;
 }
  
 #setGridSize {
@@ -33,14 +47,33 @@ body {
     align-items: center;
     flex: 1;
     gap: 12px;
+    margin-top: -48px;
 }
 
-#guide {
+#setGridSize input {
+    width: 205px;
+    height: 35px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#setGridSize button {
+    font-size: 14px;
+    padding: 8px 40px;
+    border-radius: 8px;
+    background-color: #34568B;
+    border: 2px solid #34568B;
+    color: white;
+    font-weight: bold;
+}
+
+.guider {
+    display: flex;
+    margin-top: -25px;
     text-align: center;
-    margin: 1px;
     font-family:  Asap, sans-serif;
     color: red;
-    font-size: 13px;;
+    font-size: 13px;
 }
 
 .canvas {
@@ -52,7 +85,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    border: 1px solid green;
+    border: 1px solid darkslategray;
     width: 550px;
     height: 550px;
 }
@@ -67,7 +100,7 @@ body {
 
 .gridColumn {
     flex: 1;
-    border: 1px solid beige;
+    border: 1px solid #a189e1;
 }
 
 .gridRow {
@@ -75,15 +108,36 @@ body {
     flex: 1;
 }
 
-
 .default {
-    background: beige;
+    background: #6B5B95;
   }
+
+ .buttons {
+    margin-top: 14px;
+ } 
+
+.buttons legend {
+    background-color: #FF6F61;
+    font-size: 20px;
+    border: 2px solid gray;
+    padding: 6px 24px;
+    text-align: left;
+    border-radius: 4px;
+    color: white;
+}  
 
 #button-container {
     margin: 3px;
+    color: white;
 }
 
  #clear-button {
-    margin: 2px;
+    font-size: 14px;
+    margin-top: 8px;
+    padding: 8px 40px;
+    border-radius: 8px;
+    background-color: #FF6F61;
+    border: 2px solid #FF6F61;
+    color: white;
+    font-weight: bold;
  } 

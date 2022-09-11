@@ -61,11 +61,11 @@ function draw() {
         let rainbow = document.getElementById('rainbow');
 
         if (blue.checked) {
-            this.style.backgroundColor = 'blue';
+            this.style.backgroundColor = '#36367e';
         } else if (eraser.checked) {
-            this.style.backgroundColor = 'beige';
-        } else if (black.checked) {
-            this.style.backgroundColor = 'black';
+            this.style.backgroundColor = '#84a8bb';
+        } else if (gray.checked) {
+            this.style.backgroundColor = '#a0a0a3';
         } else if (rainbow.checked) {
             let randomColor = Math.floor(Math.random()*16777215).toString(16);
             this.style.backgroundColor = '#' + randomColor;

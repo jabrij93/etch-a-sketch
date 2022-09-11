@@ -10,27 +10,28 @@
 </head>
 
 <body>
-    <h1 class="header"> Let's sketch ! </h1>
+    <h1 class="header"> Let's  <span>  sketch !  </span> </h1>
     <div id="setGridSize">
         <p id="header-title"> Grid Size :</p> 
-        <input type="text" placeholder="Size of Board" class="size-box" id="size-box">
+        <input type="text" placeholder="Enter a number between 2 to 99 " class="size-box" id="size-box">
         <span id = "duplicateOfInput"></span>
         <button id="submit" > Submit </button>
     </div>
-    <p id="guide"> Enter a number between 2 to 99 </p>
-
+    
     <div class="canvas">
       <div class="container"></div>
     </div>
       
-     <div class="buttons">
-    <form id="button-container">  
-        <input type="radio" id="blue" name="pen" value="blue-pen"><label for = "blue-pen"> Blue </label>
-        <input type="radio"  id="eraser" name="pen" value="eraser"><label for = "eraser" > Eraser </label>
-        <input type="radio" id="black" name="pen" value="black-pen"> <label for = "black" > Black </label>
-        <input type="radio"id="rainbow" name="pen" value="black-pen"> <label for = "rainbow" > Rainbow </label>
-    </form>
-    </div>
+    <fieldset class="buttons">
+        <legend> Pick a colour :) </legend>
+        <form id="button-container">  
+            <input type="radio" id="blue" name="pen" value="blue-pen"><label for = "blue-pen"> Blue </label>
+            <input type="radio"  id="eraser" name="pen" value="eraser"><label for = "eraser" > Eraser </label>
+            <input type="radio" id="gray" name="pen" value="gray-pen"> <label for = "gray" > Gray </label>
+            <input type="radio"id="rainbow" name="pen" value="black-pen"> <label for = "rainbow" > Rainbow </label>
+        </form>
+
+     </fieldset>
     <button id = "clear-button" > Clear </button>
 </body>
 </html>
